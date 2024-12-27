@@ -22,13 +22,7 @@ def remove_user(username):
 
 
 def remove_users_from_csv(csv_file, archive_name):
-    """
-    Reads usernames from a CSV file, archives their home directories,
-    and removes the users from the system.
-
-    Args:
-        csv_file (str): Path to the CSV file containing usernames (e.g., 2023_fall_users.csv).
-    """
+   
     with open(csv_file, 'r', encoding='utf-8') as infile:
         reader = csv.reader(infile)
         next(reader, None) 
